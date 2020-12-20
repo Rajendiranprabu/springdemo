@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-configuration PUBLIC  
+ "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+ <hibernate-configuration>  
+ <session-factory>  
+ <property name="hibernate.hbm2ddl.auto">update</property>   
+ <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+ <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+ <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bookfinder</property>
+ <property name="connection.username">root</property>                        
+ <property name="connection.password">admin</property> 
+ <property name="show_sql">true</property>
+ <mapping class="demo.model.Student"></mapping>                       
+ <mapping class="demo.model.Passport"></mapping>
+  <mapping class="demo.model.Vehicle"></mapping>
+ 
+ </session-factory>   
+ </hibernate-configuration>   

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+    <bean id="vehicle" class="springdemo.Car">
+    <property name="regNo" value="1001"></property>
+    <property name="carName" value="Verna"></property>
+    </bean>
+    
+     <bean id="vh" class="springdemo.Car">
+    <property name="regNo" value="1003"></property>
+    <property name="carName" value="Harrier"></property>
+    </bean>
+    
+    <bean id="ts" class="springdemo.TravelService" scope="prototype" autowire="constructor">
+    
+    
+    </bean>  
+    
+    
+    
+    
+        
+        </beans>
