@@ -1,14 +1,25 @@
-./metadata
+.metadata/
 
-D:/FSITB1_Spring/demo/demo/.mvn
-D:/FSITB1_Spring/demo/demo/.settings
-D:/FSITB1_Spring/demo/demo/target
+demo/demo/.mvn
+demo/demo/.settings
+demo/demo/target
 
-D:/FSITB1_Spring/fsit
+fsit
 
-D:/FSITB1_Spring/mvc-demo/target
-D:/FSITB1_Spring/servers
+mvc-demo/target
+mvc-demo/.classpath
+mvc-demo/.project
+mvc-demo/.settings
 
-D:/FSITB1_Spring/ServletDemo/.settings
+springdemo/.classpath
+springdemo/.project
+springdemo/.settings
+springdemo/target
 
-D:/FSITB1_Spring/ServletDemo/build
+servers
+
+ServletDemo/.settings
+ServletDemo/.classpath
+ServletDemo/.project
+
+ServletDemo/build
