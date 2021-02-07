@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  product-server:
+    image: rajendiranprabu/mm2-products-service:0.0.1-SNAPSHOT
+    mem_limit: 800m
+    ports:
+      - "8010:8010"
+    depends-on:
+      - eureka-server
+    environment:
+      EUREKA.CLINET.SERVICEURL.DEFAULTZONE:http://eureka-server:8761/eureka
+  
+  eureka-server:
+    image: rajendiranprabu/mm2-eurekadmo:0.0.1-SNAPSHOT
+    mem-limit: 600m
+    ports:
+      - "8761:8761"
+    
+   
